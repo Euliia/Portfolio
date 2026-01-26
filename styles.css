@@ -1,9 +1,9 @@
 body {
     font-family: Times, serif;
-    background-color: #0b0d14;
+    background-color: #fff6fb;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #2d1b2a;
     overflow-x: hidden;
 }
 
@@ -15,6 +15,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -2;
+    opacity: 0.35;
 }
 
 /* Header */
@@ -23,9 +24,9 @@ body {
     top: 0;
     width: 100%;
     z-index: 10;
-    background-color: rgba(11, 13, 20, 0.60);
+    background-color: rgba(255, 246, 251, 0.75);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 105, 180, 0.25);
 }
 
 #headerInnerDiv {
@@ -43,15 +44,15 @@ body {
     gap: 10px;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #7a1f57;
 }
 
 #logoDot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ff3b3b;
-    box-shadow: 0px 0px 20px rgba(255, 59, 59, 0.55);
+    background-color: #ff4fa3;
+    box-shadow: 0px 0px 18px rgba(255, 79, 163, 0.40);
 }
 
 #navDiv {
@@ -62,21 +63,21 @@ body {
 
 #navDiv a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(122, 31, 87, 0.75);
     font-size: 14px;
     padding: 10px 10px;
     border-radius: 999px;
 }
 
 #navDiv a:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.06);
+    color: #7a1f57;
+    background-color: rgba(255, 79, 163, 0.10);
 }
 
 #navDiv a.active {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: #7a1f57;
+    background-color: rgba(255, 79, 163, 0.14);
+    border: 1px solid rgba(255, 79, 163, 0.22);
 }
 
 /* Hero section */
@@ -97,23 +98,24 @@ body {
 #hiText {
     margin: 0;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(122, 31, 87, 0.70);
 }
 
 #heroTitle {
     margin: 8px 0px 0px 0px;
     font-size: clamp(34px, 5vw, 54px);
     line-height: 1.06;
+    color: #2d1b2a;
 }
 
 #nameSpan {
-    color: #ff3b3b;
-    text-shadow: 0px 0px 20px rgba(255, 59, 59, 0.30);
+    color: #ff4fa3;
+    text-shadow: 0px 0px 18px rgba(255, 79, 163, 0.25);
 }
 
 #heroSubtitle {
     margin: 16px 0px 26px 0px;
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(45, 27, 42, 0.75);
     line-height: 1.6;
     max-width: 52ch;
 }
@@ -138,9 +140,9 @@ body {
 }
 
 #hireBtn {
-    background-color: #ff3b3b;
+    background-color: #ff4fa3;
     color: white;
-    box-shadow: 0px 10px 30px rgba(255, 59, 59, 0.22);
+    box-shadow: 0px 10px 30px rgba(255, 79, 163, 0.22);
 }
 
 #hireBtn:hover {
@@ -149,13 +151,13 @@ body {
 }
 
 #workBtn {
-    background-color: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.12);
-    color: white;
+    background-color: rgba(255, 79, 163, 0.10);
+    border-color: rgba(255, 79, 163, 0.22);
+    color: #7a1f57;
 }
 
 #workBtn:hover {
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 79, 163, 0.16);
     transform: translateY(-1px);
 }
 
@@ -175,14 +177,14 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: #7a1f57;
+    background-color: rgba(255, 79, 163, 0.10);
+    border: 1px solid rgba(255, 79, 163, 0.22);
     font-weight: bold;
 }
 
 .socialIcon:hover {
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 79, 163, 0.16);
     transform: translateY(-1px);
 }
 
@@ -196,15 +198,15 @@ body {
     position: relative;
     width: min(340px, 85vw);
     aspect-ratio: 1 / 1;
-    filter: drop-shadow(0px 18px 70px rgba(0, 0, 0, 0.55));
+    filter: drop-shadow(0px 18px 70px rgba(255, 79, 163, 0.18));
 }
 
 #blobDiv {
     position: absolute;
     inset: 0;
     border-radius: 36% 64% 55% 45% / 45% 38% 62% 55%;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background-color: rgba(255, 79, 163, 0.10);
+    border: 1px solid rgba(255, 79, 163, 0.22);
     animation: blobAnim 8s ease-in-out infinite;
 }
 
@@ -215,7 +217,7 @@ body {
     height: calc(100% - 24px);
     object-fit: cover;
     border-radius: 36% 64% 55% 45% / 45% 38% 62% 55%;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 79, 163, 0.22);
     animation: blobAnim2 8s ease-in-out infinite;
 }
 
