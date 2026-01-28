@@ -8,60 +8,68 @@
 </head>
 
 <body>
+
+  <!-- Stars background -->
   <canvas id="starsCanvas"></canvas>
 
-  <div id="headerDiv">
-    <div id="headerInnerDiv">
-      <a id="logoDiv" href="#">
-        <div id="logoDot"></div>
-        <div>Júlía</div>
-      </a>
+  <!-- Page content -->
+  <div id="pageDiv">
 
-      <div id="navDiv">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
+    <div id="headerDiv">
+      <div id="headerInnerDiv">
+        <a id="logoDiv" href="#">
+          <div id="logoDot"></div>
+          <div>Júlía</div>
+        </a>
 
-  <div id="heroDiv">
-    <div id="heroLeftDiv">
-      <p id="hiText">Hi,</p>
-
-      <h1 id="heroTitle">
-        I’m <span id="nameSpan">Júlía</span><br />
-        Computer Scientist &<br /> business student.
-      </h1>
-
-      <p id="heroSubtitle">
-        I build modern, fast, clean websites and web apps, with smooth UI and strong attention to detail.
-      </p>
-
-      <div id="buttonsDiv">
-        <a class="heroButton" id="hireBtn" href="#contact">Hire Me</a>
-        <a class="heroButton" id="workBtn" href="#projects">View Work</a>
-      </div>
-
-      <div id="socialDiv">
-        <a class="socialIcon" href="#">GH</a>
-        <a class="socialIcon" href="#">IN</a>
-        <a class="socialIcon" href="#">X</a>
+        <div id="navDiv">
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </div>
 
-    <div id="heroRightDiv">
-      <div id="blobWrap">
-        <div id="blobDiv"></div>
-        <img
-          id="profileImg"
-          src="profile.jpg"
-          alt="Profile photo"
-        />
+    <div id="heroDiv">
+      <div id="heroLeftDiv">
+        <p id="hiText">Hi,</p>
+
+        <h1 id="heroTitle">
+          I’m <span id="nameSpan">Júlía</span><br />
+          Computer Scientist &<br />
+          Business student.
+        </h1>
+
+        <p id="heroSubtitle">
+          This is my portfolio website where I showcase my projects and skills. 
+          This includes web development, game development, and more.
+        </p>
+
+        <div id="buttonsDiv">
+          <a class="heroButton" id="cvBtn" href="#contact">CV</a>
+          <a class="heroButton" id="workBtn" href="#projects">View Work</a>
+        </div>
+
+        <div id="socialDiv">
+          <a class="socialIcon" href="#" onclick="githubRedirect()">GitHub</a>
+          <a class="socialIcon" href="#" onclick="linkedinRedirect()">LinkedIn</a>
+        </div>
+      </div>
+
+      <div id="heroRightDiv">
+        <div id="blobWrap">
+          <div id="blobDiv"></div>
+          <img
+            id="profileImg"
+            src="./images/Picture3.jpg"
+            alt="Profile"
+          />
+        </div>
       </div>
     </div>
+
   </div>
 
   <script src="script.js"></script>
